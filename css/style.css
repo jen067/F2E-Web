@@ -1,3 +1,38 @@
+.show{
+  display: flex !important;
+  flex-direction: column !important;
+  background-color: white;
+  border-radius: 1rem;
+  width: 90vw;
+  z-index: 5;
+  padding: 2rem 2rem .5rem 2rem;
+  animation: open ease-out 0.1s;
+  box-shadow: -5px .8rem 1.2rem 0 rgb(0, 0, 0, .2);
+  position: absolute;
+  top: 0;
+  right: -.3rem;
+  top: -.3rem;
+}
+
+.black{
+  color: black !important;
+}
+
+
+@keyframes open {
+  from {
+    opacity: 0;
+    display: none;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 100;
+    display: block;
+    transform: scale(1);
+  }
+}
+
 .banner .bg {
   position: absolute;
   left: 0;

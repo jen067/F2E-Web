@@ -43,6 +43,16 @@ new Chart(ctx, {
   },
 });
 
+const menuBtn = document.querySelector(".menuBtn");
+const menuList = document.querySelector(".menuList");
+const list = document.querySelectorAll(".menuList li");
+menuBtn.addEventListener("click", displayMenu);
+function displayMenu() {
+  console.log(true);
+  menuList.classList.toggle("show");
+  list.forEach((e) => e.classList.toggle("black"));
+}
+
 // Menu
 // let navTrigger = document.querySelector(".navTrigger");
 // const menu = document.querySelector(".menu");
